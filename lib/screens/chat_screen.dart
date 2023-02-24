@@ -39,7 +39,9 @@ class _ChatScreenState extends State<ChatScreen> {
           title: const Text("ChatGPT"),
           actions: [
             IconButton(
-                onPressed: () {},
+                onPressed: () async{
+                  await Services.showModalSheet(context: context);
+                },
                 icon: const Icon(Icons.more_vert_rounded, color: Colors.white))
           ],
         ),
